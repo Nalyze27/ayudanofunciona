@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> <3</title>
+  <style>
+    .body {
+      background-color: rgb(254, 135, 159);
+      text-align: center;
+    }
+
+    .body__title {
+      color: rgb(0, 0, 0);
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 20%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">¿Quieres pasar esta noche conmigo?</h1>
+  <img src="https://i.pinimg.com/originals/1b/5a/6c/1b5a6ca8a87400022d6ca63470e958d1.jpg" alt="no se" class="body__img" />
+  <br>
+  <button id="yes">Si</button>
+  <button id="no">No</button>
+
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('Uy mi amor, cometiste un gran error al decir que si');
+      alert('Ahora preparate para las consecuensias MUAJAJAJAJAJAJA');
+      location.href = 'https://youtu.be/izGwDsrQ1eQ?si=eTpF67KcvUGkyo0p';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
